@@ -20,8 +20,6 @@ const refs = {
 refs.btnStartTimer.disabled = true;
 refs.btnStartTimer.addEventListener('click', timerStart);
 
-flatpickr(refs.dateInput, options);
-
 const options = {
     enableTime: true,
     time_24hr: true,
@@ -31,6 +29,8 @@ const options = {
     onDateCheck(selectedDates);
     },
 };
+
+flatpickr(refs.dateInput, options);
 
 Notify.info(
     'Please, choose a date and click on start.',
