@@ -87,10 +87,10 @@ function addLeadingZero(value) {
 }
 
 function convertMs(ms) {
-    const day = hour * 24;
-    const hour = minute * 60;
-    const minute = second * 60;
     const second = 1000;
+    const minute = second * 60;
+    const hour = minute * 60;
+    const day = hour * 24;    
 
     const days = addLeadingZero(Math.floor(ms / day));
     const hours = addLeadingZero(Math.floor((ms % day) / hour));
